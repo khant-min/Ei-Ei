@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+.bar li {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.bar li:hover {
+  @apply hover:text-teal-500;
+}
+
+.menu li {
+  font-family: "Ubuntu", sans-serif;
+  @apply py-3 border-b-[0.5px] border-slate-400;
+}
+
+.about-ul {
+  @apply md:flex flex-col gap-6 mt-8;
+}
+
+.about-ul a {
+  @apply flex gap-5 items-center hover:text-teal-500;
+}
+
+.ol {
+  @apply flex flex-col gap-8;
+}
+.ol h2 {
+  @apply font-bold mb-2;
+}
+.ol span {
+  @apply pl-4 text-teal-700 font-semibold flex md:inline;
+}
+
+.title {
+  @apply rounded-xl;
+}
