@@ -10,7 +10,7 @@ const Bar = () => {
   return (
     <>
       <nav
-        className={`bar hidden md:block p-2 rounded-full shadow-md text-sm px-4 py-3 font-bold ${
+        className={`bar hidden md:block p-2 rounded-full shadow-md text-sm px-4 py-3 font-bold  ${
           theme === "dark" && "bg-[#252529]"
         }`}
       >

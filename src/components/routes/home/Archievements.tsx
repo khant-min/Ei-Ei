@@ -50,7 +50,9 @@ const Archievements = ({ styles }: ArchievementsProps) => {
             </div>
           </div>
           <Link to="skills">
-            <div className={styles}>
+            <div
+              className={`${styles} transition-all hover:text-teal-600 font-semibold`}
+            >
               <p>More Skills</p>
               <span>
                 <i className="fa-solid fa-chevron-right text-[.75rem]"></i>

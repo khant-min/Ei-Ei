@@ -9,7 +9,7 @@
 }
 
 .bar li:hover {
-  @apply hover:text-teal-500;
+  @apply hover:text-teal-500 transition-all;
 }
 
 .menu li {
