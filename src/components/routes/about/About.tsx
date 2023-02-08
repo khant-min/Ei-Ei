@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <div className="mt-20 md:mt-32">
-      <div className="flex flex-col md:flex-row justify-between items-center flex-col-reverse">
+      <div className="flex flex-col-reverse md:flex-row justify-between items-center">
         <div>
           <Svg styles={"flex md:hidden"} />
         </div>
