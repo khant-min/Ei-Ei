@@ -36,7 +36,7 @@ const initialState: InitialState = {
     {
       id: 4,
       date: "Sun Jan 22 2023",
-      header: "Archievement of having upper intermediate level in English",
+      header: "Archievement of having advance level in English",
       content: "Know English pretty well and fluent in speaking",
     },
   ],

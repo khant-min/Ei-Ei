@@ -16,26 +16,20 @@ const Home = () => {
               theme === "light" ? "text-balck" : "text-zinc-200"
             }`}
           >
-            Enthusiastic and active person who is able to teach and communicate
-            with students
+            Enthusiastic and active person, a teacher
           </h1>
           <p
             className={`pt-6 text-md ${
               theme === "light" ? "text-black" : "text-zinc-400"
             }`}
           >
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
-            molestias quidem voluptatibus inventore eum repellat temporibus
-            vero, dolorem deserunt, in voluptas assumenda quibusdam explicabo at
-            hic earum, obcaecati voluptatum consequuntur blanditiis veritatis
-            tempore eos vel nisi velit. Corporis in ullam recusandae suscipit
-            minus modi nemo eaque doloribus reprehenderit exercitationem dolore
-            obcaecati nihil accusamus aliquam laborum sint dicta impedit
-            nesciunt vitae saepe placeat, ratione aut animi! Dolores explicabo
-            dignissimos qui numquam officiis ut odit, commodi animi sit quae,
-            nihil nulla iure est perspiciatis dolor repellat dicta mollitia
-            veniam. Eius sint molestias numquam asperiores, facilis, natus quis
-            et nostrum ad eum ex!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            animi consequuntur minima corrupti, expedita consequatur saepe enim
+            quis eligendi nostrum magnam. Ipsa voluptates labore, laudantium
+            illo ratione dolores eius adipisci nesciunt excepturi autem
+            blanditiis aliquam officiis, at eaque doloremque assumenda soluta
+            natus omnis, voluptate laborum quisquam! Consequuntur quia quas
+            accusantium.
           </p>
           <div className="mt-6">
             <Svg />
@@ -88,10 +82,10 @@ const Home = () => {
                 <a
                   href={cv}
                   target="_blank"
-                  className={`flex justify-center items-center p-1.5 rounded-md hover:cursor-pointer ${
+                  className={`flex justify-center items-center p-1.5 rounded-md hover:cursor-pointer transition-all ${
                     theme === "light"
-                      ? "bg-zinc-200 text-black"
-                      : "bg-zinc-800 text-zinc-200"
+                      ? "bg-zinc-200 text-black hover:bg-zinc-300"
+                      : "bg-zinc-800 text-zinc-200 hover:bg-zinc-700"
                   }`}
                 >
                   Resume

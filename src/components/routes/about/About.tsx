@@ -27,9 +27,10 @@ const About = () => {
             }`}
           >
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-              sint veritatis labore ducimus architecto neque facere ipsa
-              corporis voluptates error.
+              I'm an enthusiastic and active person who is able to teach and
+              communicate with students quite well. As a sociable and well
+              qualified teacher, I can take handle of students and explain
+              lectures well.
             </p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati

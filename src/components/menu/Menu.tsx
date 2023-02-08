@@ -17,7 +17,7 @@ const Menu = () => {
     >
       <div
         className={`max-w-[90%] m-auto mt-8 p-6 rounded-3xl ${
-          theme === "light" ? "bg-slate-200" : "bg-zinc-900 text-zinc-300"
+          theme === "light" ? "bg-slate-200" : "bg-zinc-800 text-zinc-300"
         }`}
       >
         <div className="flex justify-between items-center">

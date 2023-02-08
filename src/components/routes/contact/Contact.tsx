@@ -4,7 +4,7 @@ import { toggling } from "../../../redux/reducers/theme";
 const Contact = () => {
   const theme = useAppSelector(toggling);
   return (
-    <div className="mt-20 max-w-[70%] m-auto mb-[20%]">
+    <div className="mt-20 max-w-[90%] m-auto mb-[20%]">
       <h2
         className={`font-semibold text-xl ${
           theme === "dark" && "text-zinc-300"
