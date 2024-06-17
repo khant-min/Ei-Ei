@@ -16,31 +16,23 @@ const initialState: ExpInitialState = {
   experiences: [
     {
       id: 1,
-      occupation: "Teacher",
-      at: "Pakokku",
-      description:
-        "I've taught three years and have experiences of how to handle students",
-    },
-    {
-      id: 2,
-      occupation: "Facilitator",
-      at: "Colorful Youth, Yangon",
-      description:
-        "Work as a Facilitator for three months and can use digital tools and google classroom properly",
+      occupation: "Freelance Teacher",
+      at: "Effortless English | 12/2022 - Present | online",
+      description: "My position is to train students for IELTS preparation",
     },
     {
       id: 3,
       occupation: "English Speaking Club Trainer",
-      at: "Home Education, Yangon",
+      at: "Home Education | 06/2022 - 09/2022 | Yangon",
       description:
-        "Play a role as a trainer for three months and have skills for applying Microsoft applications and zoom app",
+        "The duty of a trainer is to share tips, have conversations in English and share information to improve students' general knowledge so that they can speak fluently and with confidence.",
     },
     {
       id: 4,
-      occupation: "Freelance Tutor",
-      at: "Youth of Spring, Yangon",
+      occupation: "Assistant Teacher",
+      at: "Youth of Spring | 2021 - 2022 | Yangon",
       description:
-        "Have the essential skills to guide students and know teaching methods which are crucial in teaching",
+        "Checking homework and keeping an eye on students whether they study well or not. Solve problems formed between teachers and students. Drawing class timetable and lesson plans.",
     },
   ],
 };

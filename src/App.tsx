@@ -13,27 +13,19 @@ const App = () => {
   const theme = useAppSelector(toggling);
 
   return (
-    <div className={`${theme === "dark" && "bg-[#000000]"}`}>
-      <div
-        className={`max-w-6xl m-auto px-8 ${
-          theme === "dark" && "bg-[#18181B]"
-        }`}
-      >
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="skills" element={<Skills />} />
-            <Route path="education" element={<Education />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="*" element={<FOF />} />
-          </Route>
-        </Routes>
-      </div>
+    <div className={`m-auto px-20 ${theme === "dark" && "bg-[#18181B]"}`}>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="skills" element={<Skills />} />
+          <Route path="education" element={<Education />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<FOF />} />
+        </Route>
+      </Routes>
     </div>
   );
 };
 
 export default App;
-
-// theme === "light" ? "bg-zinc-300" : "bg-zinc-700"

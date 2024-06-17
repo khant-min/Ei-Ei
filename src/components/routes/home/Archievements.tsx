@@ -5,7 +5,6 @@ import {
 } from "../../../redux/reducers/archievements";
 import { Link } from "react-router-dom";
 import { toggling } from "../../../redux/reducers/theme";
-
 interface ArchievementsProps {
   styles: string;
 }
