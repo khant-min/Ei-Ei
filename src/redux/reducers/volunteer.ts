@@ -16,26 +16,26 @@ const initialState: InitialState = {
   volunteer: [
     {
       id: 1,
-      date: "2022",
+      date: "2021-2022",
       header: "FACILITATOR",
       organization: "Colorful youth",
-      activity: "well performed to satisfy the orginization",
+      activity: "Well performed to satisfy the orginization",
     },
     {
       id: 2,
-      date: "2021",
+      date: "2021-2022",
       header: "FREELANCE TEACHER",
       organization: "Youth of Spring",
       activity:
-        "teach and guide students and appreciate by almost all students",
+        "Teach and guide students and appreciate by almost all students",
     },
     {
       id: 3,
-      date: "2022 - present",
+      date: "06/2022 - 09/2022",
       header: "SPEAKING CLASS TRAINER",
       organization: "Home Education",
       activity:
-        "have fluency in speaking and have the ability to use most teaching based applications",
+        "Have fluency in speaking and have the ability to use most teaching based applications",
     },
   ],
 };

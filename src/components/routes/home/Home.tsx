@@ -3,49 +3,65 @@ import Svg from "./Svg";
 import Volunteer from "./Volunteer";
 import { toggling } from "../../../redux/reducers/theme";
 import { useAppSelector } from "../../../redux/store/store";
-import cv from "../../../assets/cv form.pdf";
+import cv from "../../../assets/resume_2.pdf";
+import { motion } from "framer-motion";
 
 const Home = () => {
   const theme = useAppSelector(toggling);
   return (
     <div className="mt-10">
       <div>
-        <div className="max-w-2xl">
+        <motion.div
+          initial={{ opacity: 0, y: -200 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="max-w-2xl"
+        >
           <h1
-            className={`text-4xl sm:text-5xl font-bold ${
+            className={`text-2xl sm:text-4xl font-bold ${
               theme === "light" ? "text-balck" : "text-zinc-200"
             }`}
           >
-            Enthusiastic and active person, a teacher
+            A teacher who comitted to inspiring to achieve their full potential
+            and develop a love for English language
           </h1>
           <p
             className={`pt-6 text-md ${
               theme === "light" ? "text-black" : "text-zinc-400"
             }`}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-            animi consequuntur minima corrupti, expedita consequatur saepe enim
-            quis eligendi nostrum magnam. Ipsa voluptates labore, laudantium
-            illo ratione dolores eius adipisci nesciunt excepturi autem
-            blanditiis aliquam officiis, at eaque doloremque assumenda soluta
-            natus omnis, voluptate laborum quisquam! Consequuntur quia quas
-            accusantium.
+            Dedicated and experienced teacher with over 4 years of experience in
+            English teaching and 1 year in IELTS teaching. Skilled in creating
+            engaging lesson plans,integrating technology, and fostering a
+            positive learning environment. Proven ability to enhance student
+            achievement and adapt to diverse learning needs. Comitted to
+            continuous professional development and collaboration with the
+            school community.
           </p>
           <div className="mt-6">
             <Svg />
           </div>
-        </div>
+        </motion.div>
 
         <div className="mt-20">
           <div className="flex flex-col lg:flex-row  lg:items-start justify-between gap-20 lg:gap-0">
-            <div className="w-[80%]">
+            <motion.div
+              initial={{ opacity: 0, x: -200 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="w-[80%]"
+            >
               <div className="text-teal-500 font-bold">
                 <h2>ARCHIEVEMENTS</h2>
               </div>
               <Archievements styles={"text-teal-500 flex gap-2"} />
-            </div>
+            </motion.div>
 
-            <div>
+            <motion.div
+              initial={{ opacity: 0, x: 200 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+            >
               <div className="border border-gray-200 p-4 rounded-xl lg:mr-20">
                 <div className="flex items-center gap-4">
                   <svg
@@ -75,7 +91,7 @@ const Home = () => {
                   </h2>
                 </div>
                 <div className="max-w-md">
-                  <div className="mt-6">
+                  <div className="my-6">
                     <Volunteer />
                   </div>
                 </div>
@@ -92,7 +108,7 @@ const Home = () => {
                   <i className="fa-solid fa-arrow-right pl-2 text-sm"></i>
                 </a>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
