@@ -17,7 +17,7 @@ const Svg = () => {
         </a>
       </li>
       <li>
-        <a target="_blank" href="https://instagram.com/dandelion_will_be_yours">
+        <a target="_blank" href="https://instagram.com/dandelion_willbeyours">
           <AiFillInstagram className="text-2xl text-gray-500" />
         </a>
       </li>
