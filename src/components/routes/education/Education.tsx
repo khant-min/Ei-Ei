@@ -1,6 +1,9 @@
 import { useAppSelector } from "../../../redux/store/store";
 import { toggling } from "../../../redux/reducers/theme";
 import { motion } from "framer-motion";
+// import ielts from "../../../assets/ielts.jpg";
+// import efset from "../../../assets/efset.jpg";
+// import matri from "../../../assets/passed_matriculatio_exam.jpg";
 
 const Education = () => {
   const theme = useAppSelector(toggling);
@@ -12,7 +15,11 @@ const Education = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
         className="leading-8"
+        // flex items-center gap-10
       >
+        {/* <div>
+          <img src={ielts} alt="IELTS" width="60px" />
+        </div> */}
         <h2
           className={`font-bold text-lg ${
             theme === "light" ? "text-teal-700" : "text-teal-500"
@@ -32,6 +39,7 @@ const Education = () => {
           I've got distinction in english and 78 marks
         </p>
       </motion.div>
+
       <motion.div
         initial={{ opacity: 0, x: -200 }}
         animate={{ opacity: 1, x: 0 }}
@@ -77,8 +85,15 @@ const Education = () => {
         >
           British council English Score | 09/2022 - Present,
         </span>
+        <span
+          className={`"pl-4 opacity-75 ml-3 block ${
+            theme === "light" ? "opacity-75" : "text-zinc-300"
+          }`}
+        >
+          EF Standard English Test | 06/2024 - Present
+        </span>
         <p className={`${theme === "dark" && "text-zinc-300"}`}>
-          I'm fluent in English
+          {/* I'm fluent in English EF SET */}
         </p>
       </motion.div>
     </div>
