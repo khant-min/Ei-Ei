@@ -13,7 +13,9 @@ const App = () => {
   const theme = useAppSelector(toggling);
 
   return (
-    <div className={`m-auto px-20 ${theme === "dark" && "bg-[#18181B]"}`}>
+    <div
+      className={`m-auto px-6 md:px-20 ${theme === "dark" && "bg-[#18181B]"}`}
+    >
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

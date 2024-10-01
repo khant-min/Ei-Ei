@@ -15,32 +15,32 @@ interface ExpInitialState {
 const initialState: ExpInitialState = {
   experiences: [
     {
-      id: 5,
+      id: 1,
       occupation: "4 skills and grammar instructor",
       at: "6.2023- current",
       description: "Sunrise language center",
     },
     {
-      id: 6,
-      occupation: "ELTS guide",
-      at: "1.2023 - 5.2023",
-      description: "IEffortless English",
+      id: 2,
+      occupation: "IELTS guide",
+      at: "1.2023 - current",
+      description: "Effortless English",
     },
     {
-      id: 7,
-      occupation: "IELTS guide and grammar instructor",
+      id: 3,
+      occupation: "Freelance Teacher",
       at: "6.2023 - 9.2023",
       description: "Comfy learning",
     },
 
     {
-      id: 1,
-      occupation: "Freelance Teacher",
+      id: 4,
+      occupation: "IELTS guide",
       at: "Effortless English | 12/2022 - Present | online",
       description: "My position is to train students for IELTS preparation",
     },
     {
-      id: 3,
+      id: 5,
       occupation: "English Speaking Club Trainer",
       at: "Home Education | 06/2022 - 09/2022 | Yangon",
       description:
@@ -48,7 +48,7 @@ const initialState: ExpInitialState = {
     },
 
     {
-      id: 4,
+      id: 6,
       occupation: "Assistant Teacher",
       at: "Youth of Spring | 2021 - 2022 | Yangon",
       description:

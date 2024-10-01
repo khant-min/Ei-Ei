@@ -3,6 +3,7 @@ import { useAppSelector } from "../../../redux/store/store";
 import { toggling } from "../../../redux/reducers/theme";
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
+import AlertBox from "../../common/AlertBox";
 
 const ContactForm: React.FC = () => {
   const theme = useAppSelector(toggling);
@@ -11,6 +12,8 @@ const ContactForm: React.FC = () => {
   const [email, setEmail] = useState<string>("");
   const [phNo, setPhNo] = useState<string>("");
   const [message, setMessage] = useState<string>("");
+
+  const [alertVisible, setAlertVisible] = useState(false);
 
   const form = useRef<HTMLFormElement>(null!);
 
@@ -25,8 +28,8 @@ const ContactForm: React.FC = () => {
       )
       .then(
         (result) => {
+          setAlertVisible(true);
           console.log(result.text);
-          console.log("message send");
         },
         (error) => {
           console.log(error.text);
@@ -41,15 +44,23 @@ const ContactForm: React.FC = () => {
 
   return (
     <div className="flex justify-center items-center mt-10">
+      <AlertBox
+        message="Message sent successfully!"
+        isVisible={alertVisible}
+        onClose={() => setAlertVisible(false)}
+      />
+
       <motion.div
         initial={{ opacity: 0, y: -200 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className={`p-8 rounded-lg w-[70%] ${theme === "dark" && "text-white"}`}
+        className={`md:p-8 rounded-lg w-full md:w-[70%] ${
+          theme === "dark" && "text-white"
+        }`}
       >
         <form ref={form} onSubmit={sendEmail}>
-          <div className="flex justify-between">
-            <div className="mb-4 w-[45%]">
+          <div className="flex flex-col md:flex-row justify-between">
+            <div className="mb-4 w-full md:w-[45%]">
               <label
                 className="block text-teal-500 font-semibold mb-2"
                 htmlFor="name"
@@ -67,7 +78,7 @@ const ContactForm: React.FC = () => {
                 placeholder="Ei Shwe Sin"
               />
             </div>
-            <div className="mb-4 w-[45%]">
+            <div className="mb-4 w-full md:w-[45%]">
               <label
                 className="block text-teal-500 font-semibold mb-2"
                 htmlFor="name"
@@ -87,8 +98,8 @@ const ContactForm: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex justify-between">
-            <div className="mb-4 w-[45%]">
+          <div className="flex flex-col md:flex-row justify-between">
+            <div className="mb-4 w-full md:w-[45%]">
               <label className="block text-teal-500 mb-2" htmlFor="email">
                 Your Email
               </label>
@@ -103,7 +114,7 @@ const ContactForm: React.FC = () => {
                 className="w-full px-4 py-2 text-black border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
               />
             </div>
-            <div className="mb-4 w-[45%]">
+            <div className="mb-4 w-full md:w-[45%]">
               <label className="block text-teal-500 mb-2" htmlFor="phone">
                 Your Phone
               </label>
