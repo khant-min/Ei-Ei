@@ -28,12 +28,7 @@ const Skills = () => {
         transition={{ duration: 0.5, delay: 0.25 }}
       >
         <English />
-        <div className="mt-20">
-          <div className="text-teal-500 font-bold">
-            <h2>ARCHIEVEMENTS</h2>
-          </div>
-          <Archievements styles={"hidden"} />
-        </div>
+
         <div
           // initial="hidden"
           // whileInView="visible"
@@ -49,6 +44,13 @@ const Skills = () => {
             <h2>EXPERIENCES</h2>
           </div>
           <Experiences />
+        </div>
+
+        <div className="mt-20">
+          <div className="text-teal-500 font-bold">
+            <h2>ARCHIEVEMENTS</h2>
+          </div>
+          <Archievements styles={"hidden"} />
         </div>
       </motion.div>
     </div>

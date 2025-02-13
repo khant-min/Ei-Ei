@@ -1,5 +1,5 @@
 // import Ei from "../../../assets/320524975_1218384652089657_5450799927955766085_n (1).jpg";
-import Ei from "../../../assets/ProfilePictureMaker.png";
+import Ei from "../../../assets/eiei.jpg";
 import Svg from "./Svg";
 import { useAppSelector } from "../../../redux/store/store";
 import { toggling } from "../../../redux/reducers/theme";
@@ -20,8 +20,8 @@ const About = () => {
           transition={{ duration: 0.8 }}
           className="flex flex-col md:w-[40%]"
         >
-          <div className="">
-            <img className="w-[90%]" src={Ei} />
+          <div className="mt-10 md:mt-0">
+            <img className="w-[90%] rounded-md" src={Ei} />
           </div>
           <div>
             <Svg styles={`hidden md:flex`} />
@@ -36,8 +36,8 @@ const About = () => {
               theme === "dark" && "text-zinc-300"
             }`}
           >
-            I'm Ei Shwe Sin Myo, sociable and well qualified teacher who can
-            take handle of students
+            I'm Ei Shwe Sin Myo, a sociable and dedicated teacher, who can
+            handle students of various age groups
           </motion.h1>
           <div
             className={`mt-10 flex flex-col gap-6 ${

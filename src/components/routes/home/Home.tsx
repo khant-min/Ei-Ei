@@ -30,13 +30,15 @@ const Home = () => {
               theme === "light" ? "text-black" : "text-zinc-400"
             }`}
           >
-            Dedicated and experienced teacher with over 4 years of experience in
-            English teaching and 1 year in IELTS teaching. Skilled in creating
-            engaging lesson plans,integrating technology, and fostering a
-            positive learning environment. Proven ability to enhance student
-            achievement and adapt to diverse learning needs. Comitted to
-            continuous professional development and collaboration with the
-            school community.
+            Passionate and dedicated English teacher with three years of
+            experience across multiple schools, fostering a dynamic and
+            student-centered learning environment. Skilled in designing
+            interactive speaking activities, adapting lessons to diverse
+            learning needs, and integrating technology to enhance engagement.
+            Known for creating a supportive atmosphere that builds students'
+            confidence in communication while effectively developing their
+            language skills. Committed to continuous professional growth and
+            innovative teaching approaches to inspire learners.
           </p>
           <div className="mt-6">
             <Svg />

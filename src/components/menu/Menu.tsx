@@ -40,7 +40,7 @@ const Menu = () => {
             </li>
             <li>
               <Link onClick={menuFun} to="skills">
-                Skills
+                Experience
               </Link>
             </li>
             <li>

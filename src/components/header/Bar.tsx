@@ -22,7 +22,7 @@ const Bar = () => {
             <Link to="about">About</Link>
           </li>
           <li>
-            <Link to="skills">Skills</Link>
+            <Link to="skills">Experience</Link>
           </li>
           <li>
             <Link to="education">Education</Link>
